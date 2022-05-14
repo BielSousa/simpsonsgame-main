@@ -34,6 +34,7 @@ Fiz também um processo de lemmatização e tokenização para formatar o datase
 ## Modelagem
 
 Para modelagem utilizamos um dois algorítmos, SVM e MultinomialNB que trabalham muito bem na predição de textos. Além disso, utilizei também um modelo random para o nível fácil.
+
 ![image](https://user-images.githubusercontent.com/36546452/168443594-e3aae9a8-3bc9-4ece-8aed-6b9a874244e4.png)
 
 Utilizei acurácia como métrica, uma vez que o mais importante para mim é o quanto o modelo se aproxima globalmente de respostas corretas. Pois um ser humano chutando aleatoriamente tem 25% de chances de acerto, então qualquer modelo que fique acima desse baseline tem uma taxa de acerto maior que o ser humano.
