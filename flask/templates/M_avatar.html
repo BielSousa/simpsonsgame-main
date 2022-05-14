@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='/css/style.css')}}">
+
+    <body> 
+        <script src="{{url_for('static', filename='/javascript/script.js')}}"></script>
+        <div class="minibox-avatar">
+            <div style="display: flex; flex-direction: column;">
+                <center>
+                    <h3>Bem vindo ao jogo dos Simpsons<br></h3>
+                </center>
+                <center>
+                    <h2>Selecione o seu oponente<br></h2>
+                </center>
+                <div style="display:flex;flex-direction:row;margin-top:20px;text-align: center;">
+                    <div>
+                        <button type="button" name="cletus" class="avatar"  onclick="selectOponent(this)">
+                            <img class='img-circular' src="{{url_for('static', filename='/imagens/cletus.jpg')}}"  />
+                        </button>
+                        <div class="textnivel">Iniciante</div>
+                    </div>
+                    <div>
+                        <button type="button" name="barney" class="avatar" onclick="selectOponent(this)">
+                            <img class='img-circular' src="{{url_for('static', filename='/imagens/barney.jpg')}}"  />
+                        </button>
+                        <div class="textnivel">Intermediário</div>
+                        
+                    </div>
+                    <div>
+                        <button type="button" name="flint" class="avatar" onclick="selectOponent(this)">
+                            <img class='img-circular' src="{{url_for('static', filename='/imagens/flint.jpg')}}"  />
+                        </button>
+                        <div class="textnivel">Avançado</div>
+                    </div>
+                </div>
+                <div style="display:flex;flex-direction:row;margin-top:20px; align-items: stretch;">
+                </div>
+            </div>
+    </div>
+    </body>
+</html> 

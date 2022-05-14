@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='/css/style.css')}}">
+    </head>
+    <body> 
+        <script src="{{url_for('static', filename='/javascript/script.js')}}"></script>
+        <div class="minibox-avatar">
+            <div style="display: flex; flex-direction: column;">
+                <center>
+                    <h3>Bem vindo ao jogo dos Simpsons<br></h3>
+                </center>
+                <center>
+                    <h2>Selecione seu Personagem<br></h2>
+                </center>
+                <div style="display:flex;flex-direction:row;margin-top:20px">
+                    <button type="button" name="avatar1" class="avatar"  onclick="selectAvatar(this)">
+                        <img class='img-circular' src="{{url_for('static', filename='/imagens/avatar1.png')}}"  />
+                    </button>
+                    <button type="button" name="avatar2" class="avatar" onclick="selectAvatar(this)">
+                        <img class='img-circular' src="{{url_for('static', filename='/imagens/avatar2.png')}}"  />
+                    </button>
+                    <button type="button" name="avatar3" class="avatar" onclick="selectAvatar(this)">
+                        <img class='img-circular' src="{{url_for('static', filename='/imagens/avatar3.png')}}"  />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

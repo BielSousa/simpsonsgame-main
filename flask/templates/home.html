@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='/css/style.css')}}">
+    </head>
+    <body> 
+        <script src="{{url_for('static', filename='/javascript/script.js')}}"></script>
+        <div class="minibox">
+            <center>
+                <h1>Bem vindo ao jogo dos Simpsons<br></h1>
+            </center>
+            <div class="formname">
+                <label for="nomejogador" class="labelnome">Digite seu nome</label><br>
+                <input type="text" id="nomejogador" oninput="changecolor()" class="intext"><br>
+                <button onclick="alert('Regras')" class="btn regras">Regras</button>
+                <button onclick="setPlayer()" class="btn jogar">Jogar</button>
+            </div>
+        </div>
+    </body>
+</html> 

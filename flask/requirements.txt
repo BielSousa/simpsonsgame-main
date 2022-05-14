@@ -1,0 +1,9 @@
+wordcloud
+nltk
+pandas
+matplotlib
+sklearn
+random
+pickle
+flask
+gunicorn

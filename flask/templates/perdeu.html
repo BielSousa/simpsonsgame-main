@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <center>
+            <div style="margin-top: 140px; margin-bottom: 50px;">
+                <h1 >Você perdeu!</h1>
+                <img  src="{{url_for('static', filename='imagens/perdeu.gif')}}" width="300px"><br>
+            </div>
+            <button class='btn' onclick="window.location.href='/'">Jogar novamente</button>
+        </center>
+    </body>
+</html>

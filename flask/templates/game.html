@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body> 
+        <script src="{{url_for('static', filename='javascript/script.js')}}"></script>
+       <!--<script src="script.js"></script>-->
+    <body onload="nextFrase()" style="margin:0;">
+
+        <div class="minibox">
+            <div class="frase" style="margin-top:10px;margin-left:15px;line-height: 12px;display:flex;flex-direction:column;padding: 0px;">
+                <i>Quem disse:</i><br>
+                <div id="fala"></div>
+            </div>
+            <div style="display:flex;flex-direction:row;margin-top:20px">
+                <div class="jogador">
+                    <img class='img-circular game' src="{{url_for('static', filename='imagens/'+avatar)}}"  /><br>
+                    <div class='pnt_player' style="margin-top: -25px; color: white;background-color: black; width:30px;height:30px;margin-left: 170px;border-radius: 50%;border-width:2px;border-color: black;border-style: double;">
+                        0
+                    </div>
+                    <div style="text-align:left; margin-left: 30px;">
+                        <form action="/check_response" method="post">
+                            <input type="radio" name="Personagem" value="Homer Simpson" onchange="validateresposta(this)" required>
+                            <label for="Homer Simpson">Homer Simpson</label><br/>
+                            <input type="radio" name="Personagem" value="Marge Simpson" onchange="validateresposta(this)">
+                            <label for="Marge Simpson">Marge Simpson</label><br/>
+                            <input type="radio" name="Personagem" value="Lisa Simpson" onchange="validateresposta(this)">
+                            <label for="Lisa Simpson">Lisa Simpson</label><br/>
+                            <input type="radio" name="Personagem" value="Bart Simpson" onchange="validateresposta(this)">
+                            <label for="Bart Simpson">Bart Simpson</label><br/>
+                        </form>
+                    </div>
+                </div>
+                <div class="jogador">
+                    <img class='img-circular game' src="{{url_for('static', filename='imagens/'+oponent)}}"  /><br>
+                    <div class='pnt_modelo'style="margin-top: -25px; color: white;background-color: black; width:30px;height:30px;margin-left: 170px;border-radius: 50%;border-width:2px;border-color: black;border-style: double;">
+                        0
+                    </div>
+                    <div class="boxpensando">
+                        <div id="loader"></div>
+                        <div id="pensando" class="pensando">Pensando na resposta</div>
+                        <div style="display:none;" id="palpite" class="animate-bottom">
+                            {{ palpite }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado">
+
+            </div>
+            <div class="btn-frase">
+                <button class='btn-next'onclick="nextFrase()">Próxima Frase</button>
+            </div>
+        </div>
+        <div id="oponent" modelo="{{oponent}}">
+
+        </div>
+</div>
+            
+    <script>
+        
+    </script>
+</body> 
+</html> 
