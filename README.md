@@ -58,4 +58,4 @@ Foi utilizado as seguintes premissas:
 - Ainda na tela de jogo é feito uma requisição http método post para enviar ao modelo selecionado no flask, o modelo faz a previsão e retorna o palpite do personagem autor da frase.
 
 
-[url-heroku]()
+[Clique aqui para jogar](https://simpsonsgameflask.herokuapp.com/)
